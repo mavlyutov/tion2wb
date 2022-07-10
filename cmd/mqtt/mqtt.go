@@ -11,7 +11,6 @@ import (
 	"time"
 
 	MQTT "github.com/eclipse/paho.mqtt.golang"
-	"github.com/m-pavel/go-hassio-mqtt/pkg"
 
 	"net/http"
 
@@ -27,7 +26,6 @@ type TionService struct {
 	debug bool
 
 	keepbt *bool
-	ctx    *ghm.ServiceContext
 }
 
 // PrepareCommandLineParams for TionService
@@ -99,5 +97,5 @@ func (ts TionService) Close() error {
 }
 
 func main() {
-	ghm.NewStub(&TionService{}).Main()
+	log.Println("hello world!")
 }
