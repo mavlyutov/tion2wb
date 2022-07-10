@@ -1,0 +1,12 @@
+breezers:
+  - bedroom:
+      model: s3
+      mac:
+  - livin_groom:
+      model: s3
+      mac:
+
+mqtt:
+  server: 192.168.1.1
+  user: user
+  password: password
